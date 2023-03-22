@@ -8,25 +8,39 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
+      body: Container(
+        padding: EdgeInsets.all(30),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Hello Chris',
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+                ),
+                Row(children: [
+                  Icon(Icons.check),
+                  Icon(Icons.add),
+                ])
+              ],
+            ),
+            Text(
+              'Smart home app \nMy Home lisghts smart app.',
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+            ),
+          ],
         ),
       ),
     );
