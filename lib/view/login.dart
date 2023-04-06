@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:helloworld/view/signup.dart';
 import '../reuseable_component/styles.dart';
 import '../reuseable_component/widget.dart';
 import 'homepage.dart';
@@ -43,7 +44,7 @@ class LoginPage extends StatelessWidget {
                       color: primaryColor),
                   child: const Center(
                     child: Text(
-                      'Login',
+                      'Signup',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ),
@@ -53,9 +54,11 @@ class LoginPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  TextButton(onPressed: () {}, child: const Text('Signup')),
                   TextButton(
-                      onPressed: () {}, child: const Text('Forgot Password?'))
+                      onPressed: () => Get.to(const SignupPage()),
+                      child: const Text('Signup')),
+                  // TextButton(
+                  //     onPressed: () {}, child: const Text('Forgot Password?'))
                 ],
               )
             ],

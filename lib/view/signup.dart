@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import '../reuseable_component/styles.dart';
 import '../reuseable_component/widget.dart';
 import 'homepage.dart';
+import 'login.dart';
 
 class SignupPage extends StatelessWidget {
   const SignupPage({Key? key}) : super(key: key);
@@ -37,7 +38,7 @@ class SignupPage extends StatelessWidget {
                 onTap: () => Get.to(const HomePage()),
                 child: Container(
                   width: double.infinity,
-                  height: Get.height * 0.1 - 35,
+                  height: Get.height * 0.1 - 20,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: primaryColor),
@@ -53,9 +54,12 @@ class SignupPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  TextButton(onPressed: () {}, child: const Text('Signup')),
                   TextButton(
-                      onPressed: () {}, child: const Text('Forgot Password?'))
+                    onPressed: () => Get.to(const LoginPage()),
+                    child: const Text('Login'),
+                  ),
+                  // TextButton(
+                  //     onPressed: () {}, child: const Text('Forgot Password?'))
                 ],
               )
             ],
