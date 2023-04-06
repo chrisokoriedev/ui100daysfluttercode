@@ -30,10 +30,9 @@ class _MainScreenState extends State<MainScreen> {
           Icons.bar_chart,
           Icons.menu,
         ],
+        blurEffect: true,
         activeIndex: _bottomNavIndex,
-        gapLocation: GapLocation.end,
-        leftCornerRadius: 32,
-        rightCornerRadius: 32,
+        gapLocation: GapLocation.none,
         notchSmoothness: NotchSmoothness.defaultEdge,
         onTap: (index) => setState(() => _bottomNavIndex = index),
         //other params
