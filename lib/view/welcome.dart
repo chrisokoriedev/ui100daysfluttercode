@@ -49,7 +49,7 @@ class Welcome extends StatelessWidget {
                         backgroundColor:
                             MaterialStateProperty.all(const Color(0xff3e4685)),
                         fixedSize:
-                            MaterialStateProperty.all(const Size(150, 45))),
+                            MaterialStateProperty.all(const Size(165, 45))),
                     child: const Text(
                       "Let's Go",
                       style: TextStyle(color: whiteColor, fontSize: 16),

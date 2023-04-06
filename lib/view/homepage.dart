@@ -31,16 +31,6 @@ class HomePage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
-                      Icon(Icons.sort_outlined),
-                      Icon(
-                        Icons.verified,
-                        color: Colors.blue,
-                      )
-                    ],
-                  ),
                   Container(
                     width: 150,
                     height: 150,
@@ -61,13 +51,6 @@ class HomePage extends StatelessWidget {
                   ),
                   const SizedBox(
                     height: 10,
-                  ),
-                  const Text(
-                    'Frontend Developer',
-                    style: TextStyle(
-                        color: Colors.black54,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 30),
                   Row(

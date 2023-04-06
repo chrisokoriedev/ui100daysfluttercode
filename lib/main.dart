@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/view/login.dart';
+import 'package:helloworld/view/main_screen.dart';
 import 'package:helloworld/view/welcome.dart';
 import 'package:get/get.dart';
 
@@ -16,6 +17,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.grey,
         ),
-        home: const Welcome());
+        home: const MainScreen());
   }
 }

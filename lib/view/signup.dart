@@ -36,7 +36,7 @@ class SignupPage extends StatelessWidget {
               inputCompo('**********', 'Password', Icons.lock_outline),
               const SizedBox(height: 30),
               GestureDetector(
-                onTap: () => Get.to(const HomePage()),
+                onTap: () => Get.to(const MainScreen()),
                 child: Container(
                   width: double.infinity,
                   height: Get.height * 0.1 - 20,
@@ -64,11 +64,9 @@ class SignupPage extends StatelessWidget {
                     ),
                   ),
                   TextButton(
-                    onPressed: () => Get.off(const MainScreen()),
+                    onPressed: () => Get.off(const LoginPage()),
                     child: const Text('Login'),
                   ),
-                  // TextButton(
-                  //     onPressed: () {}, child: const Text('Forgot Password?'))
                 ],
               )
             ],
