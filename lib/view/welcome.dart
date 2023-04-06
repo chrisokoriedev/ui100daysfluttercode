@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:helloworld/reuseable_component/styles.dart';
 import 'package:helloworld/reuseable_component/widget.dart';
 import 'package:helloworld/view/signup.dart';
 
@@ -22,7 +23,7 @@ class Welcome extends StatelessWidget {
               ),
             ),
             heightsize(),
-            Text(
+            const Text(
               'Dukka',
               style: TextStyle(
                 fontSize: 40,
@@ -30,7 +31,7 @@ class Welcome extends StatelessWidget {
               ),
             ),
             heightsize(),
-            Text(
+            const Text(
               'The only finance management application',
               style: TextStyle(
                 fontSize: 28,
@@ -38,8 +39,15 @@ class Welcome extends StatelessWidget {
               ),
             ),
             heightsize(),
-            TextButton(
-              child: Text('Let go'),
+            ElevatedButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(const Color(0xff3e4685)),
+                  fixedSize: MaterialStateProperty.all(const Size(150, 45))),
+              child: const Text(
+                "Let's Go",
+                style: TextStyle(color: whiteColor, fontSize: 16),
+              ),
               onPressed: () => Get.to(const SignupPage()),
             ),
           ],
