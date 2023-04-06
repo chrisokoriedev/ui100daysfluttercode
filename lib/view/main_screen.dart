@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
+import 'package:helloworld/view/homepage.dart';
+import 'package:helloworld/view/menu.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -9,7 +11,10 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   List iconList = <IconData>[];
   int _bottomNavIndex = 0;
-  List getScreen = [];
+  List getScreen = [
+    const HomePage(),
+    const MenuScreen(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,8 +22,6 @@ class _MainScreenState extends State<MainScreen> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: AnimatedBottomNavigationBar(
         icons: [
-          Icons.add,
-          Icons.add,
           Icons.add,
           Icons.add,
         ],
