@@ -7,11 +7,15 @@ class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: TextButton(
-        child: Text('Let go'),
-        onPressed: () => Get.to(const SignupPage()),
-      )),
+      body: Column(
+        children: [
+          Center(
+              child: TextButton(
+            child: Text('Let go'),
+            onPressed: () => Get.to(const SignupPage()),
+          )),
+        ],
+      ),
     );
   }
 }
