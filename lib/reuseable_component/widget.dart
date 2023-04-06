@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/reuseable_component/styles.dart';
-import 'package:get/get.dart';
 
 SizedBox heightsize() => const SizedBox(height: 20);
 SizedBox heightsizeCutsom(double height) => SizedBox(height: height);

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import '../reuseable_component/styles.dart';
 import '../reuseable_component/widget.dart';
 

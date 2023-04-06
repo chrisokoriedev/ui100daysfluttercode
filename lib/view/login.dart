@@ -4,6 +4,7 @@ import 'package:helloworld/view/signup.dart';
 import '../reuseable_component/styles.dart';
 import '../reuseable_component/widget.dart';
 import 'homepage.dart';
+import 'main_screen.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -63,7 +64,7 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                   TextButton(
-                      onPressed: () => Get.off(const SignupPage()),
+                      onPressed: () => Get.off(const MainScreen()),
                       child: const Text('Signup')),
                   // TextButton(
                   //     onPressed: () {}, child: const Text('Forgot Password?'))

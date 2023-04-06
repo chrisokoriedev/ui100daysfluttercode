@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:helloworld/view/main_screen.dart';
 import '../reuseable_component/styles.dart';
 import '../reuseable_component/widget.dart';
 import 'homepage.dart';
@@ -63,7 +64,7 @@ class SignupPage extends StatelessWidget {
                     ),
                   ),
                   TextButton(
-                    onPressed: () => Get.off(const LoginPage()),
+                    onPressed: () => Get.off(const MainScreen()),
                     child: const Text('Login'),
                   ),
                   // TextButton(
