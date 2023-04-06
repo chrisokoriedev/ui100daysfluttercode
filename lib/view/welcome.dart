@@ -22,33 +22,43 @@ class Welcome extends StatelessWidget {
                 height: 250,
               ),
             ),
-            heightsize(),
-            const Text(
-              'Dukka',
-              style: TextStyle(
-                fontSize: 40,
-                fontWeight: FontWeight.bold,
+            Spacer(),
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 40),
+              decoration: BoxDecoration(color: scaffoldBack),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Dukka',
+                    style: TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  heightsizeCutsom(10),
+                  const Text(
+                    'The only finance management application',
+                    style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  heightsize(),
+                  ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(const Color(0xff3e4685)),
+                        fixedSize:
+                            MaterialStateProperty.all(const Size(150, 45))),
+                    child: const Text(
+                      "Let's Go",
+                      style: TextStyle(color: whiteColor, fontSize: 16),
+                    ),
+                    onPressed: () => Get.to(const SignupPage()),
+                  ),
+                ],
               ),
-            ),
-            heightsize(),
-            const Text(
-              'The only finance management application',
-              style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            heightsize(),
-            ElevatedButton(
-              style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all(const Color(0xff3e4685)),
-                  fixedSize: MaterialStateProperty.all(const Size(150, 45))),
-              child: const Text(
-                "Let's Go",
-                style: TextStyle(color: whiteColor, fontSize: 16),
-              ),
-              onPressed: () => Get.to(const SignupPage()),
             ),
           ],
         ),
