@@ -16,7 +16,6 @@ expppccon(IconData iconData, String title, String desc, String amount) {
   return Container(
     width: double.infinity,
     padding: const EdgeInsets.all(20),
-    height: Get.height * 0.1 + 10,
     decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         boxShadow: const [
