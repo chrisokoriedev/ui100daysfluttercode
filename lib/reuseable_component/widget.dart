@@ -152,10 +152,10 @@ inputCompo(String hintText, String labelttext, IconData iconData) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 15),
+              padding: const EdgeInsets.only(left: 10),
               child: Text(
                 labelttext,
-                style: const TextStyle(fontSize: 16, color: kgreyColor),
+                style: const TextStyle(fontSize: 14, color: kgreyColor),
               ),
             ),
             TextFormField(

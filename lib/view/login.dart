@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                height: Get.height * 0.1 + 30,
+                height: Get.height * 0.1,
               ),
               Container(
                 padding: const EdgeInsets.all(20),
