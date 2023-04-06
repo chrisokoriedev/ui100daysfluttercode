@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:helloworld/view/login.dart';
-import 'package:helloworld/view/main_screen.dart';
-import 'package:helloworld/view/welcome.dart';
+import 'package:helloworld/reuseable_component/styles.dart';
+import 'package:helloworld/view/add_expense.dart';
 import 'package:get/get.dart';
 
 void main() => runApp(const MyApp());
@@ -15,8 +14,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Dukka Project Demo',
         theme: ThemeData(
+          scaffoldBackgroundColor: scaffoldBack,
           primarySwatch: Colors.grey,
         ),
-        home: const MainScreen());
+        home: const AddExpense());
   }
 }
