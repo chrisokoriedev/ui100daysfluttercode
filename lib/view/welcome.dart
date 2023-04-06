@@ -14,7 +14,7 @@ class Welcome extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            heightsize(),
+            heightsizeCutsom(50),
             Center(
               child: Image.asset(
                 'assets/welcome.png',
@@ -22,17 +22,16 @@ class Welcome extends StatelessWidget {
                 height: 250,
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Container(
-              padding: EdgeInsets.symmetric(vertical: 40),
-              decoration: BoxDecoration(color: scaffoldBack),
+              padding: const EdgeInsets.symmetric(vertical: 40),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
                     'Dukka',
                     style: TextStyle(
-                      fontSize: 40,
+                      fontSize: 35,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
