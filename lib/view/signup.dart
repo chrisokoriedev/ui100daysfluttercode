@@ -18,7 +18,7 @@ class SignupPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                height: Get.height * 0.1 + 30,
+                height: Get.height * 0.1,
               ),
               Container(
                 padding: const EdgeInsets.all(20),
@@ -44,7 +44,7 @@ class SignupPage extends StatelessWidget {
                       color: primaryColor),
                   child: const Center(
                     child: Text(
-                      'Login',
+                      'Reigster',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ),
@@ -52,10 +52,18 @@ class SignupPage extends StatelessWidget {
               ),
               heightsize(),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  const Text(
+                    'Already have an account?',
+                    style: TextStyle(
+                      color: Colors.black87,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                    ),
+                  ),
                   TextButton(
-                    onPressed: () => Get.to(const LoginPage()),
+                    onPressed: () => Get.off(const LoginPage()),
                     child: const Text('Login'),
                   ),
                   // TextButton(
