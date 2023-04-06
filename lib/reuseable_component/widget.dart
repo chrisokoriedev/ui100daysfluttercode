@@ -14,7 +14,7 @@ iconCompo(IconData iconData) {
 expppccon(IconData iconData, String title, String desc, String amount) {
   return Container(
     width: double.infinity,
-    padding: const EdgeInsets.all(20),
+    padding: const EdgeInsets.all(10),
     decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         boxShadow: const [
@@ -35,8 +35,8 @@ expppccon(IconData iconData, String title, String desc, String amount) {
             Row(
               children: [
                 Container(
-                  width: 50,
-                  height: 50,
+                  width: 30,
+                  height: 30,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: const Color(0xffe6eaf7)),

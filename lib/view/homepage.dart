@@ -79,11 +79,17 @@ class HomePage extends StatelessWidget {
           ]),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(
-          Icons.add,
-          size: 14,
+      floatingActionButton: SizedBox(
+        width: 40,
+        height: 40,
+        child: FloatingActionButton(
+          backgroundColor: primaryColor,
+          onPressed: () {},
+          child: const Icon(
+            Icons.add,
+            size: 18,
+            color: whiteColor,
+          ),
         ),
       ),
     );
