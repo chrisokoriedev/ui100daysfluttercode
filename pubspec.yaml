@@ -21,6 +21,7 @@ dev_dependencies:
   fluttertoast: ^8.2.1
   shared_preferences: ^2.0.20
   provider: ^6.0.5
+  animated_bottom_navigation_bar: ^1.2.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
