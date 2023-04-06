@@ -42,7 +42,7 @@ expppccon(IconData iconData, String title, String desc, String amount) {
                       color: const Color(0xffe6eaf7)),
                   child: Icon(
                     iconData,
-                    size: 28,
+                    size: 18,
                   ),
                 ),
                 const SizedBox(
@@ -54,7 +54,7 @@ expppccon(IconData iconData, String title, String desc, String amount) {
                     Text(
                       title,
                       style: const TextStyle(
-                          fontSize: 20, fontWeight: FontWeight.w600),
+                          fontSize: 16, fontWeight: FontWeight.w600),
                     ),
                     const SizedBox(height: 5),
                     Text(
@@ -70,7 +70,7 @@ expppccon(IconData iconData, String title, String desc, String amount) {
             ),
             Text(
               amount,
-              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
             )
           ],
         )

@@ -49,10 +49,7 @@ class HomePage extends StatelessWidget {
                         fontSize: 25,
                         fontWeight: FontWeight.w600),
                   ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -80,6 +77,13 @@ class HomePage extends StatelessWidget {
             expppccon(Icons.arrow_downward, 'Receive', 'Receiveing salary from',
                 '\$250'),
           ]),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(
+          Icons.add,
+          size: 14,
         ),
       ),
     );
