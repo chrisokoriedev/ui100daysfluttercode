@@ -130,17 +130,17 @@ class HomePage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            IconCompo(Icons.home_outlined),
-            IconCompo(Icons.wallet),
+            iconCompo(Icons.home_outlined),
+            iconCompo(Icons.wallet),
             Container(
                 width: 50,
                 height: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: primaryColor),
-                child: IconCompo(Icons.add)),
-            IconCompo(Icons.currency_bitcoin),
-            IconCompo(Icons.person)
+                child: iconCompo(Icons.add)),
+            iconCompo(Icons.currency_bitcoin),
+            iconCompo(Icons.person)
           ],
         ),
       ),

@@ -3,7 +3,7 @@ import 'package:helloworld/reuseable_component/styles.dart';
 import 'package:get/get.dart';
 
 SizedBox heightsize() => const SizedBox(height: 20);
-Icon IconCompo(IconData iconData) {
+iconCompo(IconData iconData) {
   return Icon(
     iconData,
     size: 30,
@@ -11,8 +11,7 @@ Icon IconCompo(IconData iconData) {
   );
 }
 
-Container expppccon(
-    IconData iconData, String title, String desc, String amount) {
+expppccon(IconData iconData, String title, String desc, String amount) {
   return Container(
     width: double.infinity,
     padding: const EdgeInsets.all(20),
@@ -41,13 +40,13 @@ Container expppccon(
                   height: 50,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                      color: Color(0xffe6eaf7)),
+                      color: const Color(0xffe6eaf7)),
                   child: Icon(
                     iconData,
                     size: 28,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 18,
                 ),
                 Column(
@@ -55,13 +54,13 @@ Container expppccon(
                   children: [
                     Text(
                       title,
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                      style: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.w600),
                     ),
-                    SizedBox(height: 5),
+                    const SizedBox(height: 5),
                     Text(
                       desc,
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                           color: Colors.black45),
@@ -72,7 +71,7 @@ Container expppccon(
             ),
             Text(
               amount,
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
             )
           ],
         )
@@ -132,7 +131,7 @@ expensesconpoI(String expensetype, String amount) {
   );
 }
 
-inputCompo(String hint_Text, String labelttext, IconData iconData) {
+inputCompo(String hintText, String labelttext, IconData iconData) {
   return Container(
     height: Get.height * 0.1 + 3,
     decoration: BoxDecoration(
@@ -163,7 +162,7 @@ inputCompo(String hint_Text, String labelttext, IconData iconData) {
             TextFormField(
               decoration: InputDecoration(
                   contentPadding: const EdgeInsets.symmetric(vertical: 15),
-                  hintText: hint_Text,
+                  hintText: hintText,
                   hintStyle: const TextStyle(fontSize: 16, color: Colors.black),
                   border: InputBorder.none,
                   prefixIcon: Icon(

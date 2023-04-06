@@ -53,8 +53,9 @@ class SignupPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  TextButton(onPressed: () {}, child: Text('Signup')),
-                  TextButton(onPressed: () {}, child: Text('Forgot Password?'))
+                  TextButton(onPressed: () {}, child: const Text('Signup')),
+                  TextButton(
+                      onPressed: () {}, child: const Text('Forgot Password?'))
                 ],
               )
             ],
