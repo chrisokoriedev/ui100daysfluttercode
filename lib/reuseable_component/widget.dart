@@ -133,7 +133,6 @@ expensesconpoI(String expensetype, String amount) {
 
 inputCompo(String hintText, String labelttext, IconData iconData) {
   return Container(
-    height: Get.height * 0.1 + 3,
     decoration: BoxDecoration(
       color: Colors.white,
       borderRadius: BorderRadius.circular(15.0),

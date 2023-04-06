@@ -37,7 +37,7 @@ class LoginPage extends StatelessWidget {
                 onTap: () => Get.to(const HomePage()),
                 child: Container(
                   width: double.infinity,
-                  height: Get.height * 0.1 - 35,
+                  height: Get.height * 0.1 - 20,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: primaryColor),
