@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:helloworld/reuseable_component/styles.dart';
 import 'package:helloworld/view/add_expense.dart';
 import 'package:get/get.dart';
+import 'package:helloworld/view/welcome.dart';
 
 void main() => runApp(const MyApp());
 
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: scaffoldBack,
           primarySwatch: Colors.grey,
         ),
-        home: const AddExpense());
+        home: const MainScreen());
   }
 }

@@ -23,7 +23,7 @@ class _AddExpenseState extends State<AddExpense> {
           children: [
             Text(
               'Add Expense',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 20,
               ),
             ),
@@ -40,7 +40,7 @@ class _AddExpenseState extends State<AddExpense> {
                       });
                     },
                     child: Icon(Icons.import_contacts_sharp)),
-                SizedBox(width: 300, child: TextFormField()),
+                SizedBox(width: 280, child: TextFormField()),
               ],
             ),
             InkWell(

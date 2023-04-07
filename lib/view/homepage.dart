@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/view/add_expense.dart';
+import 'package:get/get.dart';
 import '../reuseable_component/styles.dart';
 import '../reuseable_component/widget.dart';
 
@@ -84,7 +86,7 @@ class HomePage extends StatelessWidget {
         height: 40,
         child: FloatingActionButton(
           backgroundColor: primaryColor,
-          onPressed: () {},
+          onPressed: () => Get.to(const AddExpense()),
           child: const Icon(
             Icons.add,
             size: 18,
