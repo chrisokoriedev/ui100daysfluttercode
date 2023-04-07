@@ -11,7 +11,7 @@ class AddExpense extends StatefulWidget {
 
 class _AddExpenseState extends State<AddExpense> {
   final FlutterContactPicker _contactPicker = FlutterContactPicker();
-
+  final phoneController = TextEditingController();
   late Contact _contact;
 
   @override
@@ -50,6 +50,11 @@ class _AddExpenseState extends State<AddExpense> {
                     firstDate: DateTime(2020),
                     lastDate: DateTime(2040)),
                 child: TextFormField(
+                  onChanged: (text) {
+                    setState(() {
+                      text = _contact.toString();
+                    });
+                  },
                   enabled: false,
                 )),
           ],
