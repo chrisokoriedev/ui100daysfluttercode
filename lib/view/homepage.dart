@@ -3,6 +3,7 @@ import 'package:helloworld/view/add_expense.dart';
 import 'package:get/get.dart';
 import '../reuseable_component/styles.dart';
 import '../reuseable_component/widget.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -33,25 +34,25 @@ class HomePage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                    width: 150,
-                    height: 150,
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                            image: AssetImage(
-                              'assets/bg.png',
-                            ),
-                            fit: BoxFit.fitWidth)),
-                  ),
-                  const Text(
+                  // Container(
+                  //   width: 150.w,
+                  //   height: 150.h,
+                  //   decoration: const BoxDecoration(
+                  //       shape: BoxShape.circle,
+                  //       image: DecorationImage(
+                  //           image: AssetImage(
+                  //             'assets/bg.png',
+                  //           ),
+                  //           fit: BoxFit.fitWidth)),
+                  // ),
+                  Text(
                     'Okorie Christian',
                     style: TextStyle(
                         color: primaryColor,
-                        fontSize: 25,
+                        fontSize: 25.sp,
                         fontWeight: FontWeight.w600),
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20.h),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -82,14 +83,14 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: SizedBox(
-        width: 40,
-        height: 40,
+        width: 80.w,
+        height: 80.h,
         child: FloatingActionButton(
           backgroundColor: primaryColor,
           onPressed: () => Get.to(const AddExpense()),
-          child: const Icon(
+          child: Icon(
             Icons.add,
-            size: 18,
+            size: 18.sp,
             color: whiteColor,
           ),
         ),

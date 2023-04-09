@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/reuseable_component/styles.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-SizedBox heightsize() => const SizedBox(height: 20);
-SizedBox heightsizeCutsom(double height) => SizedBox(height: height);
+SizedBox heightsize() => SizedBox(height: 20.h);
+SizedBox heightsizeCutsom(double height) => SizedBox(height: height.h);
 iconCompo(IconData iconData) {
   return Icon(
     iconData,
-    size: 30,
+    size: 30.sp,
     color: iconData == Icons.add ? Colors.white : Colors.black54,
   );
 }
@@ -14,9 +15,9 @@ iconCompo(IconData iconData) {
 expppccon(IconData iconData, String title, String desc, String amount) {
   return Container(
     width: double.infinity,
-    padding: const EdgeInsets.all(10),
+    padding: EdgeInsets.all(10.sp),
     decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(20.r),
         boxShadow: const [
           BoxShadow(
             color: Color(0xffe8eff9),

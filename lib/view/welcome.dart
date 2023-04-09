@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:helloworld/reuseable_component/styles.dart';
 import 'package:helloworld/reuseable_component/widget.dart';
 import 'package:helloworld/view/signup.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({Key? key}) : super(key: key);
@@ -14,32 +15,31 @@ class Welcome extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            heightsizeCutsom(50),
+            heightsizeCutsom(40),
             Center(
               child: Image.asset(
                 'assets/welcome.png',
-                width: 250,
-                height: 250,
+                width: 400.w,
+                height: 500.h,
               ),
             ),
-            const Spacer(),
             Container(
               padding: const EdgeInsets.symmetric(vertical: 40),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                  Text(
                     'Dukka',
                     style: TextStyle(
-                      fontSize: 35,
+                      fontSize: 30.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  heightsizeCutsom(10),
-                  const Text(
+                  heightsizeCutsom(5),
+                  Text(
                     'The only finance management application',
                     style: TextStyle(
-                      fontSize: 28,
+                      fontSize: 20.sp,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -49,10 +49,10 @@ class Welcome extends StatelessWidget {
                         backgroundColor:
                             MaterialStateProperty.all(const Color(0xff3e4685)),
                         fixedSize:
-                            MaterialStateProperty.all(const Size(165, 45))),
-                    child: const Text(
+                            MaterialStateProperty.all(Size(165.w, 65.h))),
+                    child: Text(
                       "Let's Go",
-                      style: TextStyle(color: whiteColor, fontSize: 16),
+                      style: TextStyle(color: whiteColor, fontSize: 16.sp),
                     ),
                     onPressed: () => Get.to(const SignupPage()),
                   ),

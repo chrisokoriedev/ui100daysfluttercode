@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
+      designSize: const Size(430, 932),
       builder: (context, child) => GetMaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Dukka Project Demo',
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
             scaffoldBackgroundColor: scaffoldBack,
             primarySwatch: Colors.grey,
           ),
-          home: const MainScreen()),
+          home: const Welcome()),
     );
   }
 }
