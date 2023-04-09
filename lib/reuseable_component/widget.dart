@@ -131,7 +131,12 @@ expensesconpoI(String expensetype, String amount) {
   );
 }
 
-inputCompo(String hintText, String labelttext, IconData iconData) {
+inputCompo(
+    String hintText,
+    String labelttext,
+    IconData iconData,
+    TextEditingController emailController,
+    TextEditingController passwordController) {
   return Container(
     decoration: BoxDecoration(
       color: Colors.white,
@@ -157,20 +162,6 @@ inputCompo(String hintText, String labelttext, IconData iconData) {
                 labelttext,
                 style: const TextStyle(fontSize: 14, color: kgreyColor),
               ),
-            ),
-            TextFormField(
-              decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 15),
-                  hintText: hintText,
-                  hintStyle: const TextStyle(fontSize: 16, color: Colors.black),
-                  border: InputBorder.none,
-                  prefixIcon: Icon(
-                    iconData,
-                    color: Colors.black45,
-                  ),
-                  suffixIcon: labelttext == 'Password'
-                      ? const Icon(Icons.remove_red_eye)
-                      : null),
             ),
           ],
         ),

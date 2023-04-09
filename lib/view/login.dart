@@ -30,10 +30,31 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 50),
-              inputCompo(
-                  'user@gmail.com', 'Email Address', Icons.email_outlined),
-              const SizedBox(height: 30),
-              inputCompo('**********', 'Password', Icons.lock_outline),
+              TextFormField(
+                decoration: const InputDecoration(
+                    contentPadding: EdgeInsets.symmetric(vertical: 15),
+                    hintText: 'Email',
+                    hintStyle: TextStyle(fontSize: 16, color: Colors.black),
+                    border: InputBorder.none,
+                    prefixIcon: Icon(
+                      Icons.email,
+                      color: Colors.black45,
+                    ),
+                    suffixIcon: Icon(Icons.remove_red_eye)),
+              ),
+              const SizedBox(height: 10),
+              TextFormField(
+                decoration: const InputDecoration(
+                    contentPadding: EdgeInsets.symmetric(vertical: 15),
+                    hintText: 'Email',
+                    hintStyle: TextStyle(fontSize: 16, color: Colors.black),
+                    border: InputBorder.none,
+                    prefixIcon: Icon(
+                      Icons.email,
+                      color: Colors.black45,
+                    ),
+                    suffixIcon: Icon(Icons.remove_red_eye)),
+              ),
               const SizedBox(height: 30),
               GestureDetector(
                 onTap: () => Get.to(const HomePage()),
